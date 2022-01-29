@@ -84,6 +84,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter:brightness(25%)
 }
 
 .img-text-wrapper {
@@ -97,11 +98,22 @@ body {
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
+    text-decoration: none;
 }
 
-.logo-wrapper img {
-    width: 50%;
+.img-text-wrapper a {
+    text-decoration: none;
+}
+
+.logo-wrapper span {
+    width: 70%;
     margin-bottom: 20px;
+    font-size: 3em;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .img-text-wrapper .subtitle {
