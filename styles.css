@@ -1,7 +1,7 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Podkova', serif;
     margin: 0px;
-    background-color: black;
+    background-color: #3A4E48;
 }
 
 .container {
@@ -10,6 +10,7 @@ body {
 }
 
 .nav-wrapper {
+    font-family: 'Short Stack', cursive;
     display: flex;
     justify-content: space-between;
     padding: 38px;
@@ -20,8 +21,7 @@ body {
 }
 
 .right-side {
-    color: goldenrod;
-    font-weight: 600;
+    color: #BEB0A7;
 }
 
 .brand {
@@ -42,52 +42,60 @@ body {
 
 .nav-link-wrapper {
     height: 22px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: border-bottom 0.5s;
 }
 
 .nav-link-wrapper a {
-    color: #8a8a8a;
+    color: #8B9D83;
     text-decoration: none;
     transition: color 0.5s;
-    font-weight: 600;
+    font-size: 1.5em;
 }
 
 .nav-link-wrapper:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 3px solid #BEB0A7;
 }
 
 .nav-link-wrapper a:hover {
-    color: white;
+    color: #BEB0A7;
 }
 
 .active-nav-link{
-    border-bottom: 1px solid white;
+    border-bottom: 3px solid #BEB0A7;
 }
 
 .active-nav-link a {
-    color: white !important;
+    color: #BEB0A7 !important;
 }
 
 .portfolio-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
 }
 
 .portfolio-item-wrapper {
     position: relative;
+    
 }
 
 .portfolio-img-background {
     height: 350px;
     width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position:top;
     background-repeat: no-repeat;
-    filter:brightness(25%)
+    transition: 1s;
+    border-radius: 20px;
+    filter:brightness(80%);
 }
 
 .img-text-wrapper {
+    font-family: 'Podkova', serif;
     position: absolute;
     top: 0;
     display: flex;
@@ -105,26 +113,13 @@ body {
     text-decoration: none;
 }
 
-.logo-wrapper span {
-    width: 70%;
-    margin-bottom: 20px;
-    font-size: 3em;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-}
-
 .img-text-wrapper .subtitle {
     transition: 1s;
-    font-weight: 600;
     color: transparent;
 }
 
 .img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: goldenrod;
+    color: #8B9D83;
 }
 
 .img-darken {
@@ -138,23 +133,25 @@ body {
 }
 
 .profile-image-wrapper {
-    width: 100%;
+    width: fit-content;
+    border-radius: 10px;
+    height: auto;
+    padding-left: 3em;
 }
 
 .profile-image-wrapper img {
-    padding-top: 50px;
-    width: 70%;
+    padding: 3em;
+    width: 50%;
 }
 
 .profile-content-wrapper {
-    padding: 30px;
     color: white;
+    padding-right: 5em;
 }
 
 .profile-content-wrapper p {
-    font-weight: 600;
 }
 
 .profile-content-wrapper h1 {
-    color: goldenrod;
+    color: #BEB0A7;
 }
