@@ -140,8 +140,9 @@ body {
 }
 
 .profile-image-wrapper img {
-    padding: 3em;
+    margin: 3em;
     width: 50%;
+    border-radius: 10px;
 }
 
 .profile-content-wrapper {
